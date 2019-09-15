@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello Web Audio</title>
+  </head>
+  <body>
+    <script src="js/audio.js"></script>
+    <h2>Basic FM Synthesis</h2>
+    <p>Carrier Frequency</p>
+    <input type='range' min='20' max='10000' value='440' step='1' name='carrierfrequency' oninput="carrierFreqChange(this);" style='width: 90%;' />
+    <p>Modulator Frequency</p>
+    <input type='range' min='10' max='200' value='10' step='1' name='modulatorfrequency' oninput="modulatorFreqChange(this);" style='width: 90%;' />
+    <p>Modulator Gain</p>
+    <input type='range' min='10' max='2000' value='10' step='1' name='modulatorgain' oninput="modulatorGainChange(this);" style='width: 90%;' />
+  </body>
+</html>
